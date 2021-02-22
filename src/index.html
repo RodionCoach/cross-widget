@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cross</title>
+</head>
+
+<body>
+  <div id="buttons-wrapper">
+    <div class="point" id="0" role="button" tabindex="0" data-point="INT3D-109_monohybrid"><span class="title">Monohybrid
+        Cross</span></div>
+    <div class="point" id="1" role="button" tabindex="1" data-point="INT3D-109_dihybrid"><span class="title">Dihybrid
+        Cross</span></div>
+    <div id="timeline-wrapper">
+      <button id="closeButton">
+        <span></span>&nbsp;Close
+      </button>
+      <div id="timeline"></div>
+    </div>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('service-worker.js').then(() => {});
+    }
+  </script>
+</body>
+
+</html>
